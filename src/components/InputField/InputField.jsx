@@ -2,7 +2,7 @@ import React from "react";
 
 export function InputField({ label, type, placeholder, icon }){
     return (
-        <div className="mb-4">
+        <div>
             <label className="block text-gray-500 text-sm mb-2">
                 {label}
             </label>
@@ -12,10 +12,10 @@ export function InputField({ label, type, placeholder, icon }){
                 </div>
                 <input
                     type={type}
-                    className="w-full bg-gray-800 text-gray-300 border border-gray-700 rounded py-3 px-4 pl-10 focus:outline-none focus:border-purple-500"
+                    className="w-full bg-gray-800 text-gray-300 border border-gray-700 rounded py-3 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
                     placeholder={placeholder}
                 />
             </div>
         </div>
     );
-};
+}
