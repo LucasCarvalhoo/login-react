@@ -16,8 +16,7 @@ export function InputField({ label, type = "text", value, onChange, placeholder,
           onChange={onChange}
           placeholder={placeholder}
           required={required}
-          className="w-full pl-10 pr-3 py-3 bg-[#1e2140] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5dd3]"
-        />
+          className="w-full pl-10 pr-3 py-3 bg-[#1e2140] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5dd3]"/>
       </div>
     </div>
   )

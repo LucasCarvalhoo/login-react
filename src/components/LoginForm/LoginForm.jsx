@@ -24,19 +24,16 @@ export function LoginForm() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="seu@email.com"
         icon="mail"
-        required
-      />
+        required/>
       <PasswordField 
         label="Senha" 
         value={password} 
         onChange={(e) => setPassword(e.target.value)} 
-        required 
-      />
+        required/>
       <div className="flex items-center justify-between">
         <RemenberMeCheckbox 
           checked={rememberMe} 
-          onChange={() => setRememberMe(!rememberMe)} 
-        />
+          onChange={() => setRememberMe(!rememberMe)}/>
         <ForgotPasswordLink />
       </div>
       <LoginButton />
