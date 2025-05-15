@@ -1,21 +1,24 @@
-import React from "react";
+"use client"
 
-export function InputField({ label, type, placeholder, icon }){
-    return (
-        <div>
-            <label className="block text-gray-500 text-sm mb-2">
-                {label}
-            </label>
-            <div className="relative">
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-500">
-                    {icon}
-                </div>
-                <input
-                    type={type}
-                    className="w-full bg-gray-800 text-gray-300 border border-gray-700 rounded py-3 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
-                    placeholder={placeholder}
-                />
-            </div>
+import { Mail } from "lucide-react"
+
+export function InputField({ label, type = "text", value, onChange, placeholder, icon, required = false }) {
+  return (
+    <div className="space-y-2">
+      <label className="block text-[#a8b3cf] text-sm">{label}</label>
+      <div className="relative">
+        <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+          <Mail className="h-5 w-5 text-[#6c5dd3]" />
         </div>
-    );
+        <input
+          type={type}
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+          required={required}
+          className="w-full pl-10 pr-3 py-3 bg-[#1e2140] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c5dd3]"
+        />
+      </div>
+    </div>
+  )
 }

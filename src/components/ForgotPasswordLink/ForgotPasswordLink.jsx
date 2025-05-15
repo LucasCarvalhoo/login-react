@@ -1,11 +1,7 @@
-import React from "react";
-
 export function ForgotPasswordLink() {
-    return (
-        <div className="text-right mb-6">
-            <a href="#" className="text-sm text-purple-500 hover:text-purple-400">
-                Esqueci minha senha
-            </a>
-        </div>
-    );
-};
+  return (
+    <a href="#" className="text-sm text-[#6c5dd3] hover:underline">
+      Esqueci minha senha
+    </a>
+  )
+}

@@ -1,17 +1,20 @@
-import React from 'react';
-
 export function LoginHeader() {
   return (
-    <div className="flex justify-between items-center mb-8">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-200 mb-1">Faça seu login</h1>
-        <p className="text-sm text-gray-400">Digite suas credenciais para acessar sua conta</p>
+    <div className="text-center mb-6">
+      <div className="flex justify-center mb-4">
+        <div className="bg-[#6c5dd3] w-12 h-12 rounded-lg flex items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="w-8 h-8 text-white"
+          >
+            <path d="M4 13h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm-1 7a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2zm10-8h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1z" />
+          </svg>
+        </div>
       </div>
-      <button className="text-gray-400 p-2 rounded-full hover:bg-gray-800 transition-colors duration-200">
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-        </svg>
-      </button>
+      <h1 className="text-3xl font-bold text-white mb-2">Acesso</h1>
+      <p className="text-[#a8b3cf]">Entre para acessar sua conta</p>
     </div>
-  );
+  )
 }
